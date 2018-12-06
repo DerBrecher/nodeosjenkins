@@ -1,4 +1,4 @@
-kind : "BuidlConfig"
+kind : "BuildConfig"
 
 apiVersion: "v1"
 metadata:
