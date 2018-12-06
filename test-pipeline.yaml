@@ -9,5 +9,5 @@ spec:
       uri: "https://github.com/DerBrecher/nodeosjenkins"
   strategy:
     jenkinsPipelineStrategy:
-      jenkinsfile: Jenkinsfile
+      jenkinsfilePath: Jenkinsfile
     type: JenkinsPipeline
