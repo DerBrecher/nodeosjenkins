@@ -1,7 +1,9 @@
 #!/usr/bin/env groovy
 
 pipeline {
-    agent any
+    agent {
+        label 'jenkins-openshift'
+    }
 
     stages {
         stage('Build') {
