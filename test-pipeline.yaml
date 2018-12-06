@@ -2,7 +2,7 @@ kind : "BuildConfig"
 
 apiVersion: "v1"
 metadata:
-  name: "nodejs-sample-pipeline"
+  name: "openshift-test-pipeline"
 spec:
   strategy:
     jenkinsPipelineStrategy:
