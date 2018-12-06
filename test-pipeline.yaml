@@ -4,7 +4,10 @@ apiVersion: "v1"
 metadata:
   name: "openshift-test-pipeline"
 spec:
+  source:
+    git:
+      uri: "https://github.com/DerBrecher/nodeosjenkins"
   strategy:
     jenkinsPipelineStrategy:
-      jenkinsfile: https://raw.githubusercontent.com/DerBrecher/nodeosjenkins/master/Jenkinsfile
+      jenkinsfile: Jenkinsfile
     type: JenkinsPipeline
