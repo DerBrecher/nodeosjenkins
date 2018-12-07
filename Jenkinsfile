@@ -1,11 +1,16 @@
 #!/usr/bin/env groovy
 
 pipeline {
-    agent any
+    agent {
+        node {
+            label 'nodejs'
+        }
+    }
 
     options {
         timeout(time: 20, unit: 'MINUTES') 
     }
+
     stages {
         stage('Build') {
             steps {
