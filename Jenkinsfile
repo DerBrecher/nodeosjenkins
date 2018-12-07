@@ -16,6 +16,8 @@ pipeline {
             steps {
                 echo 'Testing..'
                 sh 'cat test.txt'
+                sh 'pwd'
+                sh 'oc whoami'
             }
         }
         stage('Deploy') {
