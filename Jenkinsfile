@@ -3,7 +3,7 @@
 pipeline {
     agent {
         node {
-            label 'nodejs'
+            label 'custompod'
         }
     }
 
