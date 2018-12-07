@@ -14,7 +14,13 @@ pipeline {
     stages {
         stage('Preample'){
             steps{
-                echo "Using project: ${openshift.project()}"
+                script {
+                    openshift.withCluster() {
+                        openshift.withProject() {
+                            echo "Using project: ${openshift.project()}"
+                        }
+                    }
+                }
             }
         }
         stage('Build') {
