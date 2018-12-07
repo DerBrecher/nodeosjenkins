@@ -12,6 +12,11 @@ pipeline {
     }
 
     stages {
+        stage('Preample'){
+            steps{
+                echo "Using project: ${openshift.project()}"
+            }
+        }
         stage('Build') {
             steps {
                 echo 'Building..'
