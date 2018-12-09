@@ -3,7 +3,7 @@
 pipeline {
     agent {
         node {
-            label 'maven'
+            label 'nodejs'
         }
     }
 
@@ -26,6 +26,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh 'sh ./build.sh'
             }
         }
         stage('Test') {
